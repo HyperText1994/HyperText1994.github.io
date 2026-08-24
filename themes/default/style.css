@@ -1,0 +1,14 @@
+/* 默认主题（浅色）—— 定义 CSS 变量，结构样式见 static/css/base.css */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f8fa;
+  --header-bg: rgba(255, 255, 255, 0.85);
+  --text: #1f2328;
+  --text-muted: #6a737d;
+  --border: #e1e4e8;
+  --accent: #0969da;
+  --accent-hover: #0550ae;
+  --code-bg: #f0f3f6;
+  --code-text: #d63384;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}

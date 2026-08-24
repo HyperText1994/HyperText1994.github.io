@@ -1,0 +1,54 @@
+/* 深色主题 —— 复用同一套结构样式，仅覆盖颜色变量 */
+:root {
+  --bg: #0d1117;
+  --bg-soft: #161b22;
+  --header-bg: rgba(13, 17, 23, 0.85);
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --border: #30363d;
+  --accent: #58a6ff;
+  --accent-hover: #79c0ff;
+  --code-bg: #1f242d;
+  --code-text: #ff9bce;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* 深色下高亮代码配色（默认引入的是浅色 github 高亮） */
+.hljs {
+  color: #c9d1d9;
+  background: transparent;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #8b949e;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #ff7b72;
+}
+
+.hljs-string,
+.hljs-doctag,
+.hljs-regexp {
+  color: #a5d6ff;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-name {
+  color: #d2a8ff;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-built_in {
+  color: #79c0ff;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable {
+  color: #ffa657;
+}

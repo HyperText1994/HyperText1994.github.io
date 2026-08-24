@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown 写作指南 · DBlog</title>
+  <meta name="description" content="DBlog —— 一个支持微博、主题切换与全文检索的静态博客">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/themes/default/style.css">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="/">DBlog</a>
+      <span class="site-subtitle">记录生活与思考</span>
+
+      <button class="nav-toggle" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a href="/">首页</a>
+        <a href="/posts/">文章</a>
+        <a href="/weibo/">微博</a>
+        <a href="/about/">关于</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="search">
+          <input type="search" id="search-input" placeholder="搜索文章 / 微博…" aria-label="搜索" autocomplete="off">
+          <div class="search-results" id="search-results" hidden></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title-full">Markdown 写作指南</h1>
+      <div class="post-meta">
+        <time>2026-02-01</time>
+        <span class="post-tags">
+          <a class="tag" href="/tags/%E6%95%99%E7%A8%8B/">#教程</a><a class="tag" href="/tags/Markdown/">#Markdown</a>
+        </span>
+      </div>
+    </header>
+    <div class="post-content markdown">
+      <p>这篇文章演示本站支持的 Markdown 语法。</p>
+<h2 id="标题"><a class="anchor" href="#标题" aria-hidden="true">#</a>标题</h2><p>用 <code>#</code> 到 <code>####</code> 表示不同层级，标题会自动生成锚点。</p>
+<h2 id="列表"><a class="anchor" href="#列表" aria-hidden="true">#</a>列表</h2><p>无序列表：</p>
+<ul>
+<li>项目一</li>
+<li>项目二<ul>
+<li>嵌套项目</li>
+</ul>
+</li>
+</ul>
+<p>有序列表：</p>
+<ol>
+<li>第一步</li>
+<li>第二步</li>
+</ol>
+<h2 id="引用与链接"><a class="anchor" href="#引用与链接" aria-hidden="true">#</a>引用与链接</h2><blockquote>
+<p>这是一段引用文字。</p>
+</blockquote>
+<p>站内链接 <a href="/about/">关于页面</a>，站外链接 <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> 会在新窗口打开。</p>
+<h2 id="表格"><a class="anchor" href="#表格" aria-hidden="true">#</a>表格</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文章</td>
+<td><code>content/posts/*.md</code></td>
+</tr>
+<tr>
+<td>微博</td>
+<td><code>content/weibo/2026.md</code></td>
+</tr>
+</tbody></table>
+<h2 id="图片"><a class="anchor" href="#图片" aria-hidden="true">#</a>图片</h2><p><img src="https://via.placeholder.com/600x300" alt="占位图"></p>
+<h2 id="代码"><a class="anchor" href="#代码" aria-hidden="true">#</a>代码</h2><p>行内代码 <code>const x = 1</code>，以及代码块（自动高亮）：</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">fib</span>(<span class="hljs-params">n</span>):
+    a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):
+        a, b = b, a + b
+    <span class="hljs-keyword">return</span> a
+</code></pre>
+    </div>
+  </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 JyunJung · Powered by <a href="https://github.com/HyperText1994/DBlog" target="_blank" rel="noopener noreferrer">DBlog</a></p>
+
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+</html>

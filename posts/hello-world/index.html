@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你好，世界 · DBlog</title>
+  <meta name="description" content="DBlog —— 一个支持微博、主题切换与全文检索的静态博客">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/themes/default/style.css">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="/">DBlog</a>
+      <span class="site-subtitle">记录生活与思考</span>
+
+      <button class="nav-toggle" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a href="/">首页</a>
+        <a href="/posts/">文章</a>
+        <a href="/weibo/">微博</a>
+        <a href="/about/">关于</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="search">
+          <input type="search" id="search-input" placeholder="搜索文章 / 微博…" aria-label="搜索" autocomplete="off">
+          <div class="search-results" id="search-results" hidden></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title-full">你好，世界</h1>
+      <div class="post-meta">
+        <time>2026-01-15</time>
+        <span class="post-tags">
+          <a class="tag" href="/tags/%E9%9A%8F%E7%AC%94/">#随笔</a><a class="tag" href="/tags/%E5%BC%80%E5%A7%8B/">#开始</a>
+        </span>
+      </div>
+    </header>
+    <div class="post-content markdown">
+      <p>欢迎来到 DBlog！这是一个<strong>纯静态</strong>、无需数据库的个人站点，支持：</p>
+<ul>
+<li>文章（Markdown 编写）</li>
+<li>微博（按年份归档，一个文件写一年）</li>
+<li>多主题切换</li>
+<li>全文检索</li>
+<li>手机 / 电脑自适应</li>
+</ul>
+<h2 id="快速开始"><a class="anchor" href="#快速开始" aria-hidden="true">#</a>快速开始</h2><ol>
+<li>在 <code>content/posts/</code> 里添加 <code>.md</code> 文件即可发布新文章。</li>
+<li>在 <code>content/weibo/2026.md</code> 里用 <code>## 日期</code> 写微博。</li>
+<li>运行 <code>npm run build</code> 生成站点，<code>npm run dev</code> 本地预览。</li>
+</ol>
+<h2 id="示例代码"><a class="anchor" href="#示例代码" aria-hidden="true">#</a>示例代码</h2><pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">hello</span>(<span class="hljs-params">name</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>!`</span>;
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">hello</span>(<span class="hljs-string">&#x27;博客&#x27;</span>));
+</code></pre><blockquote>
+<p>每一次记录，都是与未来的自己对话。</p>
+</blockquote>
+
+    </div>
+  </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 JyunJung · Powered by <a href="https://github.com/HyperText1994/DBlog" target="_blank" rel="noopener noreferrer">DBlog</a></p>
+
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+</html>
