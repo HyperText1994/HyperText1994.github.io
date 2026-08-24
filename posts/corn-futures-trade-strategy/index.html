@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>你好，世界 · DBlog</title>
+  <title>玉米交易策略 · DBlog</title>
   <meta name="description" content="DBlog —— 一个支持微博、主题切换与全文检索的静态博客">
+  <link rel="icon" type="image/svg+xml" href="/jyunjung.svg">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/themes/default/style.css">
   <link rel="stylesheet" href="/assets/css/highlight.css">
@@ -39,36 +40,44 @@
 
   <article class="post">
     <header class="post-header">
-      <h1 class="post-title-full">你好，世界</h1>
+      <h1 class="post-title-full">玉米交易策略</h1>
       <div class="post-meta">
-        <time>2026-01-15</time>
+        <time>2026-08-24</time>
         <span class="post-tags">
-          <a class="tag" href="/tags/%E9%9A%8F%E7%AC%94/">#随笔</a><a class="tag" href="/tags/%E5%BC%80%E5%A7%8B/">#开始</a>
+          <a class="tag" href="/tags/%E7%8E%89%E7%B1%B3/">#玉米</a><a class="tag" href="/tags/%E6%9C%9F%E8%B4%A7/">#期货</a>
         </span>
       </div>
     </header>
     <div class="post-content markdown">
-      <p>欢迎来到 DBlog！这是一个<strong>纯静态</strong>、无需数据库的个人站点，支持：</p>
-<ul>
-<li>文章（Markdown 编写）</li>
-<li>微博（按年份归档，一个文件写一年）</li>
-<li>多主题切换</li>
-<li>全文检索</li>
-<li>手机 / 电脑自适应</li>
-</ul>
-<h2 id="快速开始"><a class="anchor" href="#快速开始" aria-hidden="true">#</a>快速开始</h2><ol>
-<li>在 <code>content/posts/</code> 里添加 <code>.md</code> 文件即可发布新文章。</li>
-<li>在 <code>content/weibo/2026.md</code> 里用 <code>## 日期</code> 写微博。</li>
-<li>运行 <code>npm run build</code> 生成站点，<code>npm run dev</code> 本地预览。</li>
-</ol>
-<h2 id="示例代码"><a class="anchor" href="#示例代码" aria-hidden="true">#</a>示例代码</h2><pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">hello</span>(<span class="hljs-params">name</span>) {
-  <span class="hljs-keyword">return</span> <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>!`</span>;
-}
-
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">hello</span>(<span class="hljs-string">&#x27;博客&#x27;</span>));
-</code></pre><blockquote>
-<p>每一次记录，都是与未来的自己对话。</p>
+      <p>我把我的玉米期货交易策略记录在这里：</p>
+<blockquote>
+<p>总体思路是跟着玉米的种植收获规律进行做多或做空。玉米每年9月中旬收获上市，因此对11合约进行做空，第二年春节后市面玉米变少，此时进行做多。</p>
 </blockquote>
+<p>关于玉米期货的重要背景：</p>
+<ul>
+<li>玉米行情跟外盘趋势关系不大。我国玉米自给率高，进口玉米占国内玉米消费量的比例不到10%。</li>
+<li>东北是我国玉米的主产区，一年一季，每年3月播种，9月收获。</li>
+</ul>
+<h2 id="可能影响玉米价格的事件"><a class="anchor" href="#可能影响玉米价格的事件" aria-hidden="true">#</a>可能影响玉米价格的事件</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>利空</td>
+<td>5月份冬小麦上市，粮商要清仓玉米，腾出仓库空间收储小麦。另外，小麦在饲料方面可作为玉米的替代。</td>
+</tr>
+<tr>
+<td>利多</td>
+<td>8月中旬，粮商为应对新季玉米上市引起的价格下降，可能会推高玉米期货价格进行高位做空套保。通常套保操作会在9月中旬前完成。新季玉米上市后供大于求，价格下降，但是前期粮商已经高位做空玉米，因此玉米价格下降对粮商利润影响有限。</td>
+</tr>
+<tr>
+<td>利多</td>
+<td>每年6月到9月，国家为防止小麦价格过低，会开启托市收购，提振小麦价格，对玉米价格形成支撑。</td>
+</tr>
+</tbody></table>
 
     </div>
   </article>
